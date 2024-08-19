@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.borda {
+    border:  solid #3892E4;
+    background-color: #3892E4;
+    height: 72px;
+    width: 100vw;
+} 
+.logo {
+    position: absolute;
+    margin: 8px;
+}
+
+.inicio {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 44vh;
+    margin-top: 5vh;
+    cursor: pointer;   
+    transition: transform 0.3s; 
+}
+.inicio:hover {
+    transform: translateY(-10px);
+}
+
+.equações {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: relative;
+    margin-left: 75vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.equações:hover {
+    transform: translateY(-10px);
+}
+.operacoesbasicas {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 110vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.operacoesbasicas:hover {
+    transform: translateY(-10px);
+}
+.quemsomos {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 160vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.quemsomos:hover {
+    transform: translateY(-10px);
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: 23px ;
+    color: #FFFF;
+    font-weight: 79px;
+    justify-content: space-between;
+    
+}
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    position: relative;
+    display: inline;
+    
+}
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3S ease-in-out;
+}
+nav ul li:hover {
+    color: #f1f1f1;
+    transition: 0.7s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+body {
+    display: flex;
+    background-image: url(../img/wallpaper-azul-papel-de-parede-azul-fundo-9\ 1.png);
+                            
+    background-size: cover;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center; 
+    
+}
+.equações:hover .menu {
+    display: block !important;
+}
+.menuopbasicas {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center;
+}
+.operacoesbasicas:hover .menuopbasicas {
+    display: block;
+}
+@keyframes opacidademenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.quem {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 77px;
+    margin-top: 22vh;
+    color: #ffffff;
+    margin-left: 63vh;
+    cursor: context-menu;
+    transition: transform 0.5s;
+    
+}
+.quem:hover{
+    transform: translateY(-10px);
+}
+
+.texto {
+    position: absolute;
+    color: #ffffff;
+    margin-top: 40vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.5vh; 
+    text-align: center;
+    margin-left: 12vh;
+    
+}

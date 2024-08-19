@@ -1,0 +1,326 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.borda {
+    border:  solid #3892E4;
+    background-color: #3892E4;
+    height: 72px;
+    width: 100vw;
+} 
+.logo {
+    position: absolute;
+    margin: 8px;
+}
+
+.inicio {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 44vh;
+    margin-top: 5vh;
+    cursor: pointer;   
+    transition: transform 0.3s; 
+}
+.inicio:hover {
+    transform: translateY(-10px);
+}
+
+.equações {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: relative;
+    margin-left: 75vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.equações:hover {
+    transform: translateY(-10px);
+}
+.operacoesbasicas {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 110vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.operacoesbasicas:hover {
+    transform: translateY(-10px);
+}
+.quemsomos {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 160vh;
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.quemsomos:hover {
+    transform: translateY(-10px);
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: 23px ;
+    color: #FFFF;
+    font-weight: 79px;
+    justify-content: space-between;
+    
+}
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    position: relative;
+    display: inline;
+    
+}
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3S ease-in-out;
+}
+nav ul li:hover {
+    color: #f1f1f1;
+    transition: 0.7s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+body {
+    display: flex;
+    background-color: #dbdbdbcc;
+                            
+    background-size: cover;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center; 
+    
+}
+.equações:hover .menu {
+    display: block !important;
+}
+.menuopbasicas {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center;
+}
+.operacoesbasicas:hover .menuopbasicas {
+    display: block;
+}
+@keyframes opacidademenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.divisao {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 77px;
+    margin-top: 22vh;
+    color: #1e8adc;
+    margin-left: 88vh;
+    text-shadow: -1px -1px #f1f1f1, 2px 2px  #f1f1f1;
+    cursor: context-menu;
+    transition: transform 0.5s;
+    
+}
+.divisao:hover{
+    transform: translateY(-10px);
+}
+.subtitulodivisao {
+    position: absolute;
+    color: rgb(143, 143, 143);
+    margin-top: 41vh;
+    margin-left: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: context-menu;
+    transition: transform 0.5s;
+    text-shadow: -1px -1px #f1f1f1, 2px 2px #f1f1f1;
+}
+.subtitulodivisao:hover {
+    transform: translateY(-10px);
+}
+.imgdivisao {
+    position: absolute;
+    margin-top: 51vh;
+    margin-left: 90vh;
+}
+.imgdivisao:hover {
+    animation: zoom 2s;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.triangulo1 {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgb(143, 143, 143) ;
+    position: absolute;
+    margin-top: 78vh;
+    margin-left: 16.5vh;
+}
+.linha {
+border: 2px solid rgb(143, 143, 143);
+position: absolute;
+margin-top: 78vh;
+margin-left: 17vh;
+height: 77vh;
+}
+.txtdivisao {
+    position: absolute;
+    color: rgb(143, 143, 143);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 79vh;
+    margin-left: 21vh;
+    font-size: 4vh;
+    transition: transform 0.5s;
+    text-shadow: -1px -1px #f1f1f1, 2px 2px #f1f1f1;
+}
+.txtdivisao:hover {
+    transform: translateY(-10px);
+}
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 143);
+    position: absolute;
+    margin-top: 154.5vh;
+    margin-left: 16.5vh;
+}
+.linha2 {
+    border: 2px solid rgb(143, 143, 143);
+    position: absolute;
+    margin-left: 17vh;
+    width: 68vh;
+    margin-top: 155vh;
+}
+.triangulo2 {
+    width: 0;
+    height: 0;
+    border-right: 9px solid rgb(143, 143, 143);
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    position: absolute;
+    margin-top: 154.5vh;
+    margin-left: 84.5vh; 
+}
+.calculadora {
+    position: absolute;
+    border: 4px black solid;
+    width: 530px;
+    height: 500px;
+    border-radius: 30px;
+    margin-left: 133.5vh;
+    margin-top: 79vh;
+    background-color: #f1f1f1;
+}
+.bolinhacentral{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 143);
+    position: absolute;
+    margin-top: 83vh;
+    margin-left: 106.8vh;
+}
+.linhacentral {
+    border: 2px solid rgb(143, 143, 143);
+    position: absolute;
+    margin-left: 107.3vh;
+    height: 72vh;
+    margin-top: 83vh;
+}
+.bolinhacentral2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(143, 143, 143);
+    position: absolute;
+    margin-top: 154.5vh;
+    margin-left: 106.8vh;
+}
+.logocalculadora {
+    position: absolute;
+    margin-top: 88vh;
+    margin-left: 152vh;    
+}
+.valor1 {
+    position: absolute;
+    margin-top: 110vh;
+    margin-left: -53.5vh;
+}
+.valor2 {
+    position: absolute;
+    margin-left: -53.5vh;
+    margin-top: 120vh;
+}
+.buttoncalcular {
+    border-radius: 7px;
+    height: 30px;
+    width: 120px;
+    background-color: #cacaca;
+    margin-top: 133vh;
+    margin-left: 161vh;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+}
+.resultado {
+    margin-left: 155vh;
+    margin-top: 138vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+}
+#valor1 {
+    height: 30px;
+    width: 270px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+#valor2 {
+    height: 30px;
+    width: 270px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}

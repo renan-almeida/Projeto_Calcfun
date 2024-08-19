@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/equa2grau.css">
+        <script  src="js/equa2grau.js"></script>
+        <title>Equação de 2° grau</title>
+    </head>
+    <body>
+        <div class="borda">
+        
+            <img class="logo" src="img/logocalcfun.png" alt="" width="124px">
+        <nav>
+            <ul>
+                <li class="inicio">
+                    <a href="index.html">Inicio</a>
+                    </li>
+                <li class="equações">
+                    <a href="equações.html">Equações</a>
+                    <ul class="menu">
+                        <li><a href="Equa1grau.html"><h4>1° grau</h4></a>
+                            <a href="Equa2grau.html"><h4>2° grau</h4></a></li>
+                    </ul>
+                    </li>
+                <li class="operacoesbasicas">
+                    <a href="opbasicas.html">Operações basicas</a>
+                    <ul class="menuopbasicas">
+                        <li>
+                            <a href="adição.html"><h4>Adição</h4></a>
+                            <a href="subtração.html"><h4>Subtração</h4></a>
+                            <a href="multi.html"><h4>Multiplicação</h4></a>
+                            <a href="divsão.html"><h4>Divisão</h4></a>
+                        </li>
+                    </ul>
+                    </li>
+                <li class="quemsomos">
+                    <a href="Quem.html">Quem somos nós</a>
+                </li>
+            </ul>
+        </nav>       
+    </div>
+    <h1 class="Equacaotitulo">EQUAÇÃO DE 2° GRAU</h1>
+    <h2 class="subtituloequacao">Desvendando soluções para equações quadraticas</h2>
+    <img class="imgbaskhara" src="img/formula-de-bhaskara 2.png" alt="">
+    <div class="triangulo1"></div>
+    <div class="linha"></div>
+    <h1 class="txtequacao">
+        Uma equação de 2° grau é uma <br> expressão matemática que <br> inclui um termo quadrático, <br> representada na forma <br>
+ ax² + b + c = 0,  onde a, b, e c <br> são coeficientes reais e a ≠ 0. A <br> solução desta equação envolve <br> encontrar os valores de x que <br> satisfazem a equação, <br> utilizando a fórmula <br> quadrática:
+    </h1>
+    <img class="imgtxtequacao" src="img/imagem_2024-05-31_105728561 1.png" alt="" height="90px">
+    <div class="linha2"></div>
+    <div class="triangulo2"></div>
+    <div class="bolinha"></div>  
+    <div class="bolinhacentral"></div>
+    <div class="linhacentral"></div>
+    <div class="bolinhacentral2"></div>  
+    <div class="calculadora"></div>
+    <img class="logocalculadora" src="img/logocalcfun.png" alt="">
+    <form>
+        <label class="coeficienteA">
+            <input type="number" id="coeficienteA" name="coeficienteA" placeholder="Digite o coeficiente A:" >
+        </label>
+        <label class="coeficienteB">
+            <input type="number" id="coeficienteB" name="coeficienteB" placeholder="Digite o coeficiente B:">
+        </label>
+        <label class="coeficienteC">
+            <input type="number" name="coeficienteC" id="coeficienteC" placeholder="Digite o coeficiente C:">
+        </label>
+    </form>
+    <button class="buttoncalcular" onclick="calcular()"><h2>Calcular</h2></button>
+    <div class="resultado" id="resultado"></div>
+</body>
+
+</html>

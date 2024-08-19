@@ -1,0 +1,271 @@
+
+*  {
+    padding: 0px;
+    margin: 0px;
+
+    
+
+}
+.borda {
+    border:  solid #3892E4;
+    background-color: #3892E4;
+    height: 72px;
+    width: 100vw;
+} 
+.logo {
+    position: absolute;
+    margin: 8px;
+
+}
+
+.inicio {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 44vh;
+    margin-top: 32px;
+    cursor: pointer;   
+    transition: transform 0.3s; 
+}
+.inicio:hover {
+    transform: translateY(-10px);
+}
+
+.equações {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: relative;
+    margin-left: 75vh;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.equações:hover {
+    transform: translateY(-10px);
+}
+.operacoesbasicas {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 110vh;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.operacoesbasicas:hover {
+    transform: translateY(-10px);
+}
+.quemsomos {
+    font-size: 21px ;
+    color: #FFFF;
+    font-weight: 79px;
+    position: absolute;
+    margin-left: 160vh;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.quemsomos:hover {
+    transform: translateY(-10px);
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center; 
+    
+}
+.equações:hover .menu {
+    display: block !important;
+}
+.menuopbasicas {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    min-width: 100px;
+    opacity: 0;
+    animation: opacidademenu 1.5s ease forwards;
+    text-align: center;
+}
+.operacoesbasicas:hover .menuopbasicas {
+    display: block;
+}
+@keyframes opacidademenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: 23px ;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.oquevoce {
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 136px;
+    -webkit-text-fill-color: #1E8ADC;
+    margin-left: 77vh; 
+    text-align: center;
+    font-style: normal;
+    cursor:context-menu;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px white, 2px 2px white;
+    transition: transform 0.3s;
+}
+.oquevoce:hover {
+    transform: translateY(-10px);
+}
+.procura {
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 222px;
+    -webkit-text-fill-color: #1E8ADC;
+    margin-left: 81vh; 
+    font-style: normal;
+    cursor: context-menu;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px -1px white, 2px 2px white;
+    transition: transform 0.3s;
+
+}
+.procura:hover {
+    transform: translateY(-10px);
+}
+.imgbaskhara {
+    position: absolute;
+    margin-top: 52vh;
+    margin-left: 12vh;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.imgbaskhara:hover {
+    animation: zoom 2s 1;
+}
+.equaçõesbutton {
+    background-color: #1E8ADC;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 17px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 85.9vh;
+    margin-left: 12vh;
+    width: 320px;
+    transition: transform 0.3s;
+    
+}
+@keyframes cliquebutton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+button:active {
+    animation: cliquebutton 0.5s;
+} 
+.imgopbasicas {
+    position: absolute;
+    margin-left: 153vh;
+    margin-top: 53.2vh;
+}
+.imgopbasicas:hover {
+    animation: zoom 2s 1;
+}
+.opbasicbutton {
+    background-color: #1E8ADC;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 17px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 85.8vh;
+    margin-left: 153vh;
+    width: 320px;
+    transition: transform 0.3s;
+}
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    position: relative;
+    display: inline;
+}
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3S ease-in-out;
+}
+nav ul li:hover {
+    color: #f1f1f1;
+    transition: 0.7s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+.fundosite {
+    position: absolute;
+    margin-top: 116px;
+    
+}
+body {
+    display: flex;  
+    background-color: #dbdbdbcc;
+    background-size: cover;
+}
+@keyframes zoomreverso {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(0.5);
+    }
+}
+button:hover {
+    transform: translateY(-10px);
+    background-color: #0E5EAD;
+}
+button {
+    transition: transform 0.5s;
+}
+
+
+
